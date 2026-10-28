@@ -12,8 +12,11 @@ okunan ayet altın çerçeveyle vurgulanır ve ekran onu kendiliğinden takip ed
   - *Tahmini* (varsayılan): Diyanet sesi; kelime zamanı kelime uzunluğundan hesaplanır
   - *Tam kelime takibi* (Ayarlar): Arapça ses ve metin Quran.com hafızından (Alafasi,
     Husarî, Abdulbasit, Minşavi); kelimeler gerçek zamanlamayla boyanır. Meal yine tahminidir.
-- 14 hafız arasından seçim, her birini ▶ ile ön dinleme: Osman Şahin (Diyanet),
-  Mahir el-Muaykılî (EveryAyah) ve 12 Quran.com hafızı
+- 16 hafız arasından seçim, her birini ▶ ile ön dinleme: Osman Şahin (Diyanet),
+  Mahir el-Muaykılî (EveryAyah), İshak Danış ve Fatih Çollak (archive.org) ve
+  12 Quran.com hafızı
+- İshak Danış ve Fatih Çollak için ayet ve kelime zamanları, kayıtların üç
+  Quran.com hafızına sesle hizalanmasıyla üretildi (bkz. `tool/ayet_bolme`)
 - Meal seçimi: Diyanet İşleri ya da Elmalılı Hamdi Yazır (sesli meal her zaman Diyanet'tir)
 - Üst çubukta o an bulunulan **sayfa · cüz · ayet**, ayetler arasında sayfa/cüz ayraçları
 - Ayet tekrarı, önceki/sonraki ayet, hız (yavaş/normal/hızlı), sure bitince sonrakine geçme
@@ -29,6 +32,7 @@ okunan ayet altın çerçeveyle vurgulanır ve ekran onu kendiliğinden takip ed
 | Sure listesi, Arapça metin, meal, sayfa numaraları, Amasya yazı tipi | [Diyanet Açık Kaynak Kur'an API](https://acikkaynakkuran-dev.diyanet.gov.tr/swagger/documentation) (`/api/v1/chapters`, `/api/v1/chapters/{id}`, `/api/v1/juz/1`, `/api/v1/fonts`) |
 | Ayet ayet ses | `https://webdosya.diyanet.gov.tr/kuran/kuranikerim/Sound/{okuyucu}/{sure}_{ayet}.mp3` (ayet `0` = besmele) |
 | Tam kelime takibi | Quran.com — `api.qurancdn.com/api/qdc/audio/reciters/{id}/audio_files?chapter={n}&segments=true` (sure sesi + kelime zamanları), `api.quran.com/api/v4/quran/verses/uthmani` (metin) |
+| İshak Danış / Fatih Çollak sesi | `archive.org/download/{ishak_danish, rabieaaa2015_yahoo_002132432}/{sss}.mp3` + `assets/data/timings_100{2,3}.json` |
 | Mahir el-Muaykılî sesi | `everyayah.com/data/Maher_AlMuaiqly_64kbps/{sss}{aaa}.mp3` |
 | Elmalılı meali | alquran.cloud — `tr.yazir` |
 | Yedek metin | [alquran.cloud](https://alquran.cloud) — `quran-uthmani` + `tr.diyanet` |
