@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Kur'an-ı Kerim",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--dart-define-from-file=secrets.json"]
+    },
+    {
+      "name": "Kur'an-ı Kerim (release)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": ["--dart-define-from-file=secrets.json"]
+    }
+  ]
+}
